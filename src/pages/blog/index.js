@@ -4,10 +4,10 @@ import { Link, graphql } from "gatsby";
 import "../../styles/style.css";
 import "../../styles/bootstrap-grid.min.css";
 import "../../styles/animsition.min.css";
-import Layout from "../components/Layouts";
+import Layout from "../../components/Layout";
 
-const Blog = ({ data }) => {
-  const blogs = data.allMarkdownRemark.nodes;
+const Blog = () => {
+  // const blogs = data.allMarkdownRemark.nodes;
 
   return (
     <Layout>
@@ -24,29 +24,19 @@ const Blog = ({ data }) => {
 
           <div className="articles-list">
             <div className="grids">
-              {blogs.map((blog) => (
-                <div key={blog.frontmatter.id}>
-                  <article className="mr-3">
-                    <Link
-                      to={"/" + blog.frontmatter.slug}
-                      key={blog.id.toString()}
-                    >
-                      <div className="article-image">
-                        <div className="icon-arrow"></div>
-                        <img
-                          src={blog.frontmatter.thumbnail}
-                          alt="Blog post thumbnail"
-                        />
-                      </div>
-                      <div className="article-text">
-                        <h4 className="title">{blog.frontmatter.title}</h4>
-                        <p>{blog.frontmatter.description}</p>
-                        <span className="time">{blog.frontmatter.date}</span>
-                      </div>
-                    </Link>
-                  </article>
-                </div>
-              ))}
+              <article className="mr-3">
+                <Link to="/">
+                  <div className="article-image">
+                    <div className="icon-arrow"></div>
+                    <img src="" alt="Blog post thumbnail" />
+                  </div>
+                  <div className="article-text">
+                    <h4 className="title">This is working</h4>
+                    <p>IDK How, but it's working</p>
+                    <span className="time">April 7</span>
+                  </div>
+                </Link>
+              </article>
             </div>
           </div>
         </div>

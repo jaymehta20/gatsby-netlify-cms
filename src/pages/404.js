@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/Layouts";
+import Layout from "../components/Layout";
 import { Link } from "gatsby";
 
 import "../styles/style.css";
