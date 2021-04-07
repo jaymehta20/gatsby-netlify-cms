@@ -1,103 +1,60 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import { Helmet } from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react"
+import { graphql, Link } from "gatsby"
+import "../styles/style.css"
+import "../styles/bootstrap-grid.min.css"
+import "../styles/animsition.min.css"
+import Layout from "../components/Layouts"
 
-export const BlogPostTemplate = ({
-  content,
-  contentComponent,
-  description,
-  tags,
-  title,
-  helmet,
-}) => {
-  const PostContent = contentComponent || Content
-
+const Template = ({ data }) => {
+  const { html } = data.markdownRemark
+  const { title, description, date } = data.markdownRemark.frontmatter
+  console.log(data)
   return (
-    <section className="section">
-      {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
+    <div>
+      <Layout>
+        <div className="spacer">
+          <article className="single">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                  <div className="mar-top-lg">
+                    <span className="time">{date}</span>
+                    <h2 className="article-title">{title}</h2>
+                    <p>{description}</p>
+                  </div>
+                  <div dangerouslySetInnerHTML={{ __html: html }} />
+                </div>
               </div>
-            ) : null}
-          </div>
+              <div className="row"></div>
+              <div className="next-article">
+                <div className="row">
+                  <div className="col-lg-8 offset-lg-2 col-md-12">
+                    <p>Next Article</p>
+                    <h2>
+                      <Link to="/blog-2">Master frost gradients.</Link>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </section>
+      </Layout>
+    </div>
   )
 }
 
-BlogPostTemplate.propTypes = {
-  content: PropTypes.node.isRequired,
-  contentComponent: PropTypes.func,
-  description: PropTypes.string,
-  title: PropTypes.string,
-  helmet: PropTypes.object,
-}
-
-const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
-
-  return (
-    <Layout>
-      <BlogPostTemplate
-        content={post.html}
-        contentComponent={HTMLContent}
-        description={post.frontmatter.description}
-        helmet={
-          <Helmet titleTemplate="%s | Blog">
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
-          </Helmet>
-        }
-        tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
-      />
-    </Layout>
-  )
-}
-
-BlogPost.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-}
-
-export default BlogPost
-
-export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
+export const postQuery = graphql`
+  query BlogDetails($slug: String) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
+        date(formatString: "DD-MM-YYYY")
         description
-        tags
+        title
       }
     }
   }
 `
+
+export default Template
