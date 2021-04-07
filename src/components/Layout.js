@@ -2,9 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 
-import "../styles/style.css"
-import "../styles/bootstrap-grid.min.css"
-import "../styles/animsition.min.css"
+import "../styles/style.css";
+import "../styles/bootstrap-grid.min.css";
+import "../styles/animsition.min.css";
 
 const Layout = ({ children }) => {
   return (
@@ -149,6 +149,8 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </footer>
+      <script src="../../static/js/plugins.min.js"></script>
+      <script src="../../static/js/functions.js"></script>
     </>
   );
 };

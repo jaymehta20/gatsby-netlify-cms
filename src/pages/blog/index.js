@@ -5,6 +5,7 @@ import "../../styles/style.css";
 import "../../styles/bootstrap-grid.min.css";
 import "../../styles/animsition.min.css";
 import Layout from "../../components/Layout";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Blog = () => {
   // const blogs = data.allMarkdownRemark.nodes;
@@ -28,7 +29,11 @@ const Blog = () => {
                 <Link to="/">
                   <div className="article-image">
                     <div className="icon-arrow"></div>
-                    <img src="" alt="Blog post thumbnail" />
+                    <StaticImage
+                      src="../../../static/img/blog/blog-1-cover.jpg"
+                      alt="Blog post thumbnail"
+                      placeholder="blurred"
+                    />
                   </div>
                   <div className="article-text">
                     <h4 className="title">This is working</h4>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Layout from "../../components/Layout";
+import { StaticImage } from "gatsby-plugin-image";
 
 import "../../styles/style.css";
 import "../../styles/bootstrap-grid.min.css";
@@ -26,7 +27,11 @@ const About = () => {
               <div className="col-lg-6 col-md-12">
                 <div className="mar-bot-xs">
                   <div className="page-content-image">
-                    <img src="./img/studio/image_2.jpg" alt="About" />
+                    <StaticImage
+                      src="../../../static/img/studio/image_2.webp"
+                      alt="About"
+                      placeholder="blurred"
+                    />
                   </div>
                 </div>
               </div>

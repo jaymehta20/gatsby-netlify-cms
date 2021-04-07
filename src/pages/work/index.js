@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Layout from "../../components/Layout";
+import { StaticImage } from "gatsby-plugin-image";
 
 import "../../styles/style.css";
 import "../../styles/bootstrap-grid.min.css";
@@ -57,16 +58,17 @@ const Work = () => {
             <div className="col-md-12">
               <div className="works-grid">
                 <div className="works-gutter"></div>
-                <a
+                <Link
                   className="work-item"
-                  href="work/jyc.html"
+                  to="/work/jyc"
                   data-groups='["website"]'
                 >
                   <div className="work-image">
                     <div className="icon-arrow"></div>
-                    <img
-                      src="./img/works/work_1.jpg"
+                    <StaticImage
+                      src="../../../static/img/works/work_1.png"
                       alt="Jaipur Youth Conclave"
+                      placeholder="blurred"
                     />
                   </div>
                   <div className="work-description">
@@ -75,15 +77,19 @@ const Work = () => {
                       <li>Website</li>
                     </ul>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   className="work-item"
-                  href="work/bob.html"
+                  to="/work/bob/"
                   data-groups='["branding","other"]'
                 >
                   <div className="work-image">
                     <div className="icon-arrow"></div>
-                    <img src="./img/works/work_2.jpg" alt="Battle Of Bands" />
+                    <StaticImage
+                      src="../../../static/img/works/work_2.png"
+                      alt="Battle Of Bands"
+                      placeholder="blurred"
+                    />
                   </div>
                   <div className="work-description">
                     <h3 className="work-title">Battle Of Bands</h3>
@@ -91,15 +97,19 @@ const Work = () => {
                       <li>Branding, Other</li>
                     </ul>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   className="work-item"
-                  href="work/subodh.html"
+                  to="/work/subodh/"
                   data-groups='["design"]'
                 >
                   <div className="work-image">
                     <div className="icon-arrow"></div>
-                    <img src="./img/works/work_3.jpg" alt="Subodh MUN" />
+                    <StaticImage
+                      src="../../../static/img/works/work_3.png"
+                      alt="Subodh MUN"
+                      placeholder="blurred"
+                    />
                   </div>
                   <div className="work-description">
                     <h3 className="work-title">Subodh Mun</h3>
@@ -107,17 +117,18 @@ const Work = () => {
                       <li>Poster Design</li>
                     </ul>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   className="work-item"
-                  href="work/vmb.html"
+                  to="/work/vmb/"
                   data-groups='["website"]'
                 >
                   <div className="work-image">
                     <div className="icon-arrow"></div>
-                    <img
-                      src="./img/works/work_4.jpg"
+                    <StaticImage
+                      src="../../../static/img/works/work_4.png"
                       alt="Vision Money Bucket"
+                      placeholder="blurred"
                     />
                   </div>
                   <div className="work-description">
@@ -126,15 +137,19 @@ const Work = () => {
                       <li>Website</li>
                     </ul>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   className="work-item"
-                  href="./work/bvj.html"
+                  to="/work/bvj/"
                   data-groups='["website"]'
                 >
                   <div className="work-image">
                     <div className="icon-arrow"></div>
-                    <img src="./img/works/work_5.jpg" alt="BVJ MUN" />
+                    <StaticImage
+                      src="../../../static/img/works/work_5.png"
+                      alt="BVJ MUN"
+                      placeholder="blurred"
+                    />
                   </div>
                   <div className="work-description">
                     <h3 className="work-title">BVJ MUN</h3>
@@ -142,7 +157,7 @@ const Work = () => {
                       <li>Website</li>
                     </ul>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

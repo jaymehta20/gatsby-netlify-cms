@@ -38,8 +38,8 @@ const Home = () => {
                   <p>
                     We take care of your visual appearance with creativity,
                     foresight and a lot of care.
-                    <Link to="/contact/">Let's talk</Link> or
-                    <Link to="/services/">check more.</Link>
+                    <Link to="/contact/"> Let's talk</Link> or
+                    <Link to="/services/"> check more.</Link>
                   </p>
                 </div>
               </div>
@@ -48,14 +48,18 @@ const Home = () => {
               <div className="col-md-12">
                 <div className="works-grid">
                   <div className="works-gutter"></div>
-                  <a
+                  <Link
                     className="work-item"
-                    href="../work/jyc.html"
+                    to="/work/jyc/"
                     data-groups='["branding"]'
                   >
                     <div className="work-image">
                       <div className="icon-arrow"></div>
-                      <img src="img/works/work_1.jpg" alt="JYC img" />
+                      <StaticImage
+                        src="../../static/img/works/work_1.png"
+                        alt="JYC img"
+                        placeholder="blurred"
+                      />
                     </div>
                     <div className="work-description">
                       <h3 className="work-title">Jaipur Youth Conclave</h3>
@@ -63,7 +67,7 @@ const Home = () => {
                         <li>Website</li>
                       </ul>
                     </div>
-                  </a>
+                  </Link>
                   <a
                     className="work-item"
                     href="./work/bob.html"
@@ -71,7 +75,11 @@ const Home = () => {
                   >
                     <div className="work-image">
                       <div className="icon-arrow"></div>
-                      <img src="img/works/work_2.jpg" alt="BOB img" />
+                      <StaticImage
+                        src="../../static/img/works/work_2.png"
+                        alt="BOB img"
+                        placeholder="blurred"
+                      />
                     </div>
                     <div className="work-description">
                       <h3 className="work-title">Battle Of Bands</h3>
@@ -87,7 +95,11 @@ const Home = () => {
                   >
                     <div className="work-image">
                       <div className="icon-arrow"></div>
-                      <img src="img/works/work_3.jpg" alt="Subodh img" />
+                      <StaticImage
+                        src="../../static/img/works/work_3.png"
+                        alt="Subodh img"
+                        placeholder="blurred"
+                      />
                     </div>
                     <div className="work-description">
                       <h3 className="work-title">Subodh Mun</h3>
@@ -103,7 +115,11 @@ const Home = () => {
                   >
                     <div className="work-image">
                       <div className="icon-arrow"></div>
-                      <img src="img/works/work_4.jpg" alt="VMB img" />
+                      <StaticImage
+                        src="../../static/img/works/work_4.png"
+                        alt="VMB img"
+                        placeholder="blurred"
+                      />
                     </div>
                     <div className="work-description">
                       <h3 className="work-title">Vision Money Bucket</h3>
@@ -119,7 +135,7 @@ const Home = () => {
               <div className="col-md-12">
                 <div className="load-more">
                   <h2>
-                    <a href="work.html">More</a>
+                    <Link to="/work/">More</Link>
                   </h2>
                 </div>
               </div>

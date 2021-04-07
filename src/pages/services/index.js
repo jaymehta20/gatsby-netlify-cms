@@ -5,6 +5,7 @@ import Layout from "../../components/Layout";
 import "../../styles/style.css";
 import "../../styles/bootstrap-grid.min.css";
 import "../../styles/animsition.min.css";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Services = () => {
   return (
@@ -26,7 +27,11 @@ const Services = () => {
             <div className="col-md-12">
               <div className="mar-top-md">
                 <div className="page-content-image">
-                  <img src="./img/studio/image_1.jpg" alt="Services" />
+                  <StaticImage
+                    src="../../../static/img/studio/image_1.webp"
+                    alt="Services"
+                    placeholder="blurred"
+                  />
                 </div>
               </div>
             </div>
@@ -121,7 +126,11 @@ const Services = () => {
               <div className="col-lg-6 col-md-12">
                 <div className="mar-bot-xs">
                   <div className="page-content-image">
-                    <img src="./img/studio/image_2.jpg" alt="Studio img" />
+                    <StaticImage
+                      src="../../../static/img/studio/image_2.webp"
+                      alt="Studio img"
+                      placeholder="blurred"
+                    />
                   </div>
                 </div>
               </div>
@@ -132,7 +141,7 @@ const Services = () => {
                   </h2>
                   <p className="lead">
                     Come
-                    <a href="./contact.html"> let's have a coffee.</a>
+                    <Link to="/contact/"> let's have a coffee.</Link>
                   </p>
                 </div>
               </div>
