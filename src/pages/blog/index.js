@@ -1,12 +1,14 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
 
 import Layout from "../../components/Layout";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const Blog = () => {
-  // const blogs = data.allMarkdownRemark.nodes;
-
+  const data = useStaticQuery(pageQuery);
+  const {
+    allMarkdownRemark: { nodes: blogs },
+  } = data;
   return (
     <Layout>
       <div className="spacer">
@@ -22,22 +24,23 @@ const Blog = () => {
 
           <div className="articles-list">
             <div className="grids">
-              <article className="mr-3">
-                <Link to="/">
-                  <div className="article-image">
-                    <div className="icon-arrow"></div>
-                    <StaticImage
-                      src="../../../static/img/blog/blog-1-cover.jpg"
-                      alt="Blog post thumbnail"
-                    />
-                  </div>
-                  <div className="article-text">
-                    <h4 className="title">This is working</h4>
-                    <p>IDK How, but it's working</p>
-                    <span className="time">April 7</span>
-                  </div>
-                </Link>
-              </article>
+              {blogs.map((blog) => (
+                <div key={blog.id}>
+                  <article className="mr-3">
+                    <Link to="/">
+                      <div className="article-image">
+                        <div className="icon-arrow"></div>
+                        <GatsbyImage image={blog.frontmatter.thumbnail} />
+                      </div>
+                      <div className="article-text">
+                        <h4 className="title">{blog.frontmatter.title}</h4>
+                        <p>{blog.frontmatter.description}</p>
+                        <span className="time">{blog.frontmatter.date}</span>
+                      </div>
+                    </Link>
+                  </article>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -46,21 +49,20 @@ const Blog = () => {
   );
 };
 
-// export const pageQuery = graphql`
-//   query BlogIndexQuery {
-//     allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
-//       nodes {
-//         frontmatter {
-//           description
-//           slug
-//           title
-//           thumbnail
-//           date(formatString: "DD-MM-YYYY")
-//         }
-//         id
-//       }
-//     }
-//   }
-// `;
+export const pageQuery = graphql`
+  {
+    allMarkdownRemark {
+      nodes {
+        frontmatter {
+          description
+          date(formatString: "DD-MMM-YYYY")
+          thumbnail
+          title
+        }
+        id
+      }
+    }
+  }
+`;
 
 export default Blog;

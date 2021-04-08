@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { withPrefix, Link } from "gatsby";
+import { Link } from "gatsby";
 
 const Layout = ({ children }) => {
   return (
@@ -32,7 +32,6 @@ const Layout = ({ children }) => {
           content="https://codegrain.netlify.com/index.html"
           property="og:url"
         />
-        
       </Helmet>
       <header>
         <div className="container">
