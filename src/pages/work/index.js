@@ -3,10 +3,6 @@ import { Link } from "gatsby";
 import Layout from "../../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 
-import "../../styles/style.css";
-import "../../styles/bootstrap-grid.min.css";
-import "../../styles/animsition.min.css";
-
 const Work = () => {
   return (
     <Layout>

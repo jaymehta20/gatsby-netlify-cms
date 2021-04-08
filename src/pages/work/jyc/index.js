@@ -1,10 +1,6 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-
-import "../../../styles/style.css";
-import "../../../styles/bootstrap-grid.min.css";
-import "../../../styles/animsition.min.css";
 import Layout from "../../../components/Layout";
 
 const JYC = () => {

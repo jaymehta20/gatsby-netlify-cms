@@ -1,10 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "gatsby";
-
-import "../styles/style.css";
-import "../styles/bootstrap-grid.min.css";
-import "../styles/animsition.min.css";
+import { withPrefix, Link } from "gatsby";
 
 const Layout = ({ children }) => {
   return (
@@ -36,6 +32,7 @@ const Layout = ({ children }) => {
           content="https://codegrain.netlify.com/index.html"
           property="og:url"
         />
+        
       </Helmet>
       <header>
         <div className="container">

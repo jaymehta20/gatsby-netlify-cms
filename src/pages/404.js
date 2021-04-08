@@ -2,10 +2,6 @@ import React from "react";
 import Layout from "../components/Layout";
 import { Link } from "gatsby";
 
-import "../styles/style.css";
-import "../styles/bootstrap-grid.min.css";
-import "../styles/animsition.min.css";
-
 const NotFoundPage = () => {
   return (
     <Layout>

@@ -3,9 +3,7 @@ import { Link } from "gatsby";
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 
-import "../styles/style.css";
-import "../styles/bootstrap-grid.min.css";
-import "../styles/animsition.min.css";
+
 
 const Home = () => {
   return (
@@ -37,7 +35,7 @@ const Home = () => {
                 <div className="section-title">
                   <p>
                     We take care of your visual appearance with creativity,
-                    foresight and a lot of care.
+                    foresight and a lot of care. 
                     <Link to="/contact/"> Let's talk</Link> or
                     <Link to="/services/"> check more.</Link>
                   </p>
