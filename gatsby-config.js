@@ -75,6 +75,7 @@ module.exports = {
           },
           {
             family: `Work Sans`,
+            subsets: [`latin`],
             variants: [`400`, `800`],
           },
         ],
