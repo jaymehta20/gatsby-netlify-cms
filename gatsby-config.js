@@ -65,22 +65,6 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Inter`,
-            variants: [`400`, `700`],
-          },
-          {
-            family: `Work Sans`,
-            subsets: [`latin`],
-            variants: [`400`, `800`],
-          },
-        ],
-      },
-    },
     "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 };
