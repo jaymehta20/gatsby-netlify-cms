@@ -2825,7 +2825,3 @@ article.single .next-article a:hover {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
-.image-fix img {
-  width: 100%;
-}

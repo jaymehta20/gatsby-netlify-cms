@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
+
 import Layout from "../../components/Layout";
 import { GatsbyImage } from "gatsby-plugin-image";
 
@@ -26,10 +27,7 @@ const Blog = () => {
               {blogs.map((blog) => (
                 <div key={blog.id}>
                   <article className="mr-3">
-                    <Link
-                      to={"/blog/" + blog.frontmatter.slug}
-                      key={blog.id.toString()}
-                    >
+                    <Link to="/">
                       <div className="article-image">
                         <div className="icon-arrow"></div>
                         <GatsbyImage image={blog.frontmatter.thumbnail} />
@@ -60,7 +58,6 @@ export const pageQuery = graphql`
           date(formatString: "DD-MMM-YYYY")
           thumbnail
           title
-          slug
         }
         id
       }
