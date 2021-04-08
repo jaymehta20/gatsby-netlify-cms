@@ -76,7 +76,7 @@ const Work = () => {
                 </Link>
                 <Link
                   className="work-item"
-                  to="/work/bob/"
+                  to="/work/battleofbands/"
                   data-groups='["branding","other"]'
                 >
                   <div className="work-image">

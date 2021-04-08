@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../../../components/Layout";
 
-const Jyc = () => {
+const Bvj = () => {
   return (
     <Layout>
       <div className="spacer">
@@ -11,14 +11,11 @@ const Jyc = () => {
           <div className="row">
             <div className="col-md-8 offset-md-2">
               <div className="project-intro mar-top-lg">
-                <h1 className="project-title">
-                  Jaipur <br />
-                  Youth Conclave
-                </h1>
+                <h1 className="project-title">BVJMUN</h1>
                 <p className="project-description">
-                  Jaipur Youth Conclave is an academic simulation of United
-                  Nations where students of generation Z get to deliberate upon
-                  issues of global importance.
+                  Bhavan's Vidyashram Jaipur Model United Nations is a
+                  conference of students where discussions and heated debates on
+                  global issues take place.
                 </p>
                 <ul className="project-services">
                   <li>Website</li>
@@ -32,8 +29,8 @@ const Jyc = () => {
               <div className="mar-top-lg">
                 <div className="project-image">
                   <StaticImage
-                    src="../../../../static/img/works/JYC/1.png"
-                    alt="Jaipur Youth Conclave"
+                    src="../../../../static/img/works/bvj/1.png"
+                    alt="BVJ MUN"
                     placeholder="blurred"
                   />
                 </div>
@@ -44,15 +41,12 @@ const Jyc = () => {
             <div className="row">
               <div className="col-md-10 offset-md-1">
                 <p className="lead">
-                  We helped JYC to be easily accessible to their audience by
-                  creating a user-friendly website. JYC is an academic
-                  simulation of the United Nations where generation Z students
-                  deliberate upon global issues. And exactly here, we helped
-                  them to make their reach global which made their participants
-                  easy to identify and approach. The fast responsive design of
-                  the website even made the things done quickly without making
-                  wait. Creating their global identity resulted in getting them
-                  more impressive, effective, and productive results.
+                  Building and designing of their website made their
+                  participants connect and communicate with them easily. Their
+                  participants were quite satisfied with the responsive nature
+                  of the website. The layout and design gained more attention
+                  making it look professional and user-friendly at the same
+                  time.
                 </p>
               </div>
             </div>
@@ -67,14 +61,14 @@ const Jyc = () => {
         <div className="owl-carousel">
           <div className="slide">
             <StaticImage
-              src="../../../../static/img/works/JYC/Fonts.png"
+              src="../../../../static/img/works/bvj/Fonts.png"
               alt="Work Showcase"
               placeholder="blurred"
             />
           </div>
           <div className="slide">
             <StaticImage
-              src="../../../../static/img/works/JYC/Colors.png"
+              src="../../../../static/img/works/bvj/Colors.png"
               alt="Work Showcase"
               placeholder="blurred"
             />
@@ -88,8 +82,8 @@ const Jyc = () => {
               <div className="col-md-6">
                 <div className="project-image">
                   <StaticImage
-                    src="../../../../static/img/works/JYC/2.png"
-                    alt="Leadership Summit"
+                    src="../../../../static/img/works/bvj/5.png"
+                    alt="Leadersh ip Summit"
                     placeholder="blurred"
                   />
                 </div>
@@ -97,8 +91,8 @@ const Jyc = () => {
               <div className="col-md-6">
                 <div className="project-image">
                   <StaticImage
-                    src="../../../../static/img/works/JYC/3.png"
-                    alt="Committees"
+                    src="../../../../static/img/works/bvj/2.png"
+                    alt="Committe"
                     placeholder="blurred"
                   />
                 </div>
@@ -108,7 +102,7 @@ const Jyc = () => {
               <div className="col-md-6">
                 <div className="project-image">
                   <StaticImage
-                    src="../../../../static/img/works/JYC/4.png"
+                    src="../../../../static/img/works/bvj/3.png"
                     alt="Itinerary"
                     placeholder="blurred"
                   />
@@ -117,7 +111,7 @@ const Jyc = () => {
               <div className="col-md-6">
                 <div className="project-image">
                   <StaticImage
-                    src="../../../../static/img/works/JYC/5.png"
+                    src="../../../../static/img/works/bvj/4.png"
                     alt="Map"
                     placeholder="blurred"
                   />
@@ -130,7 +124,7 @@ const Jyc = () => {
               <div className="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
                 <p>Next Project</p>
                 <h2>
-                  <Link to="/work/battleofbands/">Battle of Bands</Link>
+                  <Link to="/work/jyc">Jaipur Youth Conclave</Link>
                 </h2>
               </div>
             </div>
@@ -141,4 +135,4 @@ const Jyc = () => {
   );
 };
 
-export default Jyc;
+export default Bvj;

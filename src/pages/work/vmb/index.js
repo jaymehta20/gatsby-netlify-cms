@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../../../components/Layout";
 
-const Jyc = () => {
+const Vmb = () => {
   return (
     <Layout>
       <div className="spacer">
@@ -11,18 +11,14 @@ const Jyc = () => {
           <div className="row">
             <div className="col-md-8 offset-md-2">
               <div className="project-intro mar-top-lg">
-                <h1 className="project-title">
-                  Jaipur <br />
-                  Youth Conclave
-                </h1>
+                <h1 className="project-title">Vision Money Bucket</h1>
                 <p className="project-description">
-                  Jaipur Youth Conclave is an academic simulation of United
-                  Nations where students of generation Z get to deliberate upon
-                  issues of global importance.
+                  VMB is a finance consultation firm which gives advisory
+                  services to their clients helping them grow economically and
+                  being financially independent.
                 </p>
                 <ul className="project-services">
                   <li>Website</li>
-                  <li>Design</li>
                 </ul>
               </div>
             </div>
@@ -32,8 +28,8 @@ const Jyc = () => {
               <div className="mar-top-lg">
                 <div className="project-image">
                   <StaticImage
-                    src="../../../../static/img/works/JYC/1.png"
-                    alt="Jaipur Youth Conclave"
+                    src="../../../../static/img/works/vmb/image_1.png"
+                    alt="Work Showcase"
                     placeholder="blurred"
                   />
                 </div>
@@ -44,15 +40,13 @@ const Jyc = () => {
             <div className="row">
               <div className="col-md-10 offset-md-1">
                 <p className="lead">
-                  We helped JYC to be easily accessible to their audience by
-                  creating a user-friendly website. JYC is an academic
-                  simulation of the United Nations where generation Z students
-                  deliberate upon global issues. And exactly here, we helped
-                  them to make their reach global which made their participants
-                  easy to identify and approach. The fast responsive design of
-                  the website even made the things done quickly without making
-                  wait. Creating their global identity resulted in getting them
-                  more impressive, effective, and productive results.
+                  It was even more engaging with having fun while helping to
+                  complete the Vision of Vision Money Bucket. We created a
+                  digital identity for them in the form of their official
+                  website. This helped them to reach their clients and even
+                  clients reach them and gain the online crowd. The growth in
+                  their business through digital approach made our vision
+                  successfull there.
                 </p>
               </div>
             </div>
@@ -67,15 +61,15 @@ const Jyc = () => {
         <div className="owl-carousel">
           <div className="slide">
             <StaticImage
-              src="../../../../static/img/works/JYC/Fonts.png"
-              alt="Work Showcase"
+              src="../../../../static/img/works/vmb/Fonts VMB.png"
+              alt="Fonts"
               placeholder="blurred"
             />
           </div>
           <div className="slide">
             <StaticImage
-              src="../../../../static/img/works/JYC/Colors.png"
-              alt="Work Showcase"
+              src="../../../../static/img/works/vmb/Colors VMB.png"
+              alt="Colors"
               placeholder="blurred"
             />
           </div>
@@ -88,8 +82,8 @@ const Jyc = () => {
               <div className="col-md-6">
                 <div className="project-image">
                   <StaticImage
-                    src="../../../../static/img/works/JYC/2.png"
-                    alt="Leadership Summit"
+                    src="../../../../static/img/works/vmb/image_2.png"
+                    alt="Work Showcase"
                     placeholder="blurred"
                   />
                 </div>
@@ -97,8 +91,8 @@ const Jyc = () => {
               <div className="col-md-6">
                 <div className="project-image">
                   <StaticImage
-                    src="../../../../static/img/works/JYC/3.png"
-                    alt="Committees"
+                    src="../../../../static/img/works/vmb/image_3.png"
+                    alt="Work Showcase"
                     placeholder="blurred"
                   />
                 </div>
@@ -108,8 +102,8 @@ const Jyc = () => {
               <div className="col-md-6">
                 <div className="project-image">
                   <StaticImage
-                    src="../../../../static/img/works/JYC/4.png"
-                    alt="Itinerary"
+                    src="../../../../static/img/works/vmb/image_4.png"
+                    alt="Work Showcase"
                     placeholder="blurred"
                   />
                 </div>
@@ -117,8 +111,8 @@ const Jyc = () => {
               <div className="col-md-6">
                 <div className="project-image">
                   <StaticImage
-                    src="../../../../static/img/works/JYC/5.png"
-                    alt="Map"
+                    src="../../../../static/img/works/vmb/image_5.png"
+                    alt="Work Showcase"
                     placeholder="blurred"
                   />
                 </div>
@@ -130,7 +124,7 @@ const Jyc = () => {
               <div className="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
                 <p>Next Project</p>
                 <h2>
-                  <Link to="/work/battleofbands/">Battle of Bands</Link>
+                  <Link to="/work/bvj/">BVJ MUN</Link>
                 </h2>
               </div>
             </div>
@@ -141,4 +135,4 @@ const Jyc = () => {
   );
 };
 
-export default Jyc;
+export default Vmb;
