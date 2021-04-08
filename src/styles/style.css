@@ -239,20 +239,6 @@ main {
   padding-top: 80px;
 }
 
-main:before {
-  top: -10rem;
-  left: -10rem;
-  width: calc(100% + 20rem);
-  height: calc(100% + 20rem);
-  z-index: 9;
-  content: "";
-  position: absolute;
-  pointer-events: none;
-  background-position: 50%;
-  background-image: url("../../static/img/noise.png");
-  animation: noise 2s steps(2) infinite;
-}
-
 ::-moz-selection {
   background: #252422;
   color: #fff;
@@ -508,7 +494,7 @@ header {
   left: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 3;
+  z-index: 999;
   transition: 200ms opacity ease-in, 200ms -webkit-transform ease-in;
   transition: 200ms transform ease-in, 200ms opacity ease-in;
   transition: 200ms transform ease-in, 200ms opacity ease-in,
@@ -1929,51 +1915,6 @@ article.single .next-article a:hover {
   margin-bottom: 10px;
 }
 
-@keyframes noise {
-  0% {
-    transform: translate3d(0, 9rem, 0);
-  }
-
-  10% {
-    transform: translate3d(-1rem, -4rem, 0);
-  }
-
-  20% {
-    transform: translate3d(-8rem, 2rem, 0);
-  }
-
-  30% {
-    transform: translate3d(9rem, -9rem, 0);
-  }
-
-  40% {
-    transform: translate3d(-2rem, 7rem, 0);
-  }
-
-  50% {
-    transform: translate3d(-9rem, -4rem, 0);
-  }
-
-  60% {
-    transform: translate3d(2rem, 6rem, 0);
-  }
-
-  70% {
-    transform: translate3d(7rem, -8rem, 0);
-  }
-
-  80% {
-    transform: translate3d(-9rem, 1rem, 0);
-  }
-
-  90% {
-    transform: translate3d(6rem, -5rem, 0);
-  }
-
-  to {
-    transform: translate3d(-7rem, 0, 0);
-  }
-}
 /* Responsive */
 
 @media screen and (max-width: 1024px) {
