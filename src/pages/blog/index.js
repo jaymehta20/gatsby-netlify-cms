@@ -4,10 +4,10 @@ import Layout from "../../components/Layout";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const Blog = () => {
-  const data = useStaticQuery(pageQuery);
-  const {
-    allMarkdownRemark: { nodes: blogs },
-  } = data;
+  // const data = useStaticQuery(pageQuery);
+  // const {
+  //   allMarkdownRemark: { nodes: blogs },
+  // } = data;
   return (
     <Layout>
       <div className="spacer">
@@ -21,7 +21,7 @@ const Blog = () => {
             </div>
           </div>
 
-          <div className="articles-list">
+          {/* <div className="articles-list">
             <div className="grids">
               {blogs.map((blog) => (
                 <div key={blog.id}>
@@ -32,7 +32,7 @@ const Blog = () => {
                     >
                       <div className="article-image">
                         <div className="icon-arrow"></div>
-                        {/* <GatsbyImage image={blog.frontmatter.thumbnail} /> */}
+                        <GatsbyImage image={blog.frontmatter.thumbnail} />
                       </div>
                       <div className="article-text">
                         <h4 className="title">{blog.frontmatter.title}</h4>
@@ -44,27 +44,27 @@ const Blog = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </Layout>
   );
 };
 
-export const pageQuery = graphql`
-  {
-    allMarkdownRemark {
-      nodes {
-        frontmatter {
-          description
-          date(formatString: "DD-MMM-YYYY")
-          title
-          slug
-        }
-        id
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   {
+//     allMarkdownRemark {
+//       nodes {
+//         frontmatter {
+//           description
+//           date(formatString: "DD-MMM-YYYY")
+//           title
+//           slug
+//         }
+//         id
+//       }
+//     }
+//   }
+// `;
 
 export default Blog;
