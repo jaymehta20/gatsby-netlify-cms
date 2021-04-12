@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Master frost gradients.
 slug: master-frost-gradients
-date: 2021-04-12T06:27:22.500Z
+date: 2021-03-09T06:27:22.500Z
 description: Create frost gradients with ease.
 thumbnail: /img/blog-2-cover.jpg
 ---
