@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import { GatsbyImage } from "gatsby-plugin-image";
 
@@ -30,7 +30,7 @@ const Blog = ({ data }) => {
                     >
                       <div className="article-image">
                         <div className="icon-arrow"></div>
-                        <GatsbyImage image={blog.frontmatter.thumbnail} />
+                        {/* <GatsbyImage image={blog.frontmatter.thumbnail} /> */}
                       </div>
                       <div className="article-text">
                         <h4 className="title">{blog.frontmatter.title}</h4>
