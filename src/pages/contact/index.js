@@ -20,7 +20,7 @@ const Contact = () => {
                 method="POST"
                 id="contact-form"
                 data-netlify="true"
-                action="pages/success.html"
+                action="pages/success.js"
               >
                 <p>
                   Hi, my name is
