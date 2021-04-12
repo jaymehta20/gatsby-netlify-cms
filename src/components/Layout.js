@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
         <meta name="theme-color" content="#8cc972" />
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
-        <title>CodeGrain</title>
+        {/* <title>CodeGrain</title> */}
         <meta name="format-detection" content="telephone=no" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta

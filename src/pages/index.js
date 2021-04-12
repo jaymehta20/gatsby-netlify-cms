@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 import { StaticImage } from "gatsby-plugin-image";
-
-
 
 const Home = () => {
   return (
     <Layout>
+      <SEO title="Codegrain | Home" />
       <div className="spacer">
         <div className="intro">
           <div className="intro-image">
@@ -35,7 +35,7 @@ const Home = () => {
                 <div className="section-title">
                   <p>
                     We take care of your visual appearance with creativity,
-                    foresight and a lot of care. 
+                    foresight and a lot of care.
                     <Link to="/contact/"> Let's talk</Link> or
                     <Link to="/services/"> check more.</Link>
                   </p>
