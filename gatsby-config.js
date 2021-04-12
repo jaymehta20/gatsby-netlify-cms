@@ -18,7 +18,7 @@ module.exports = {
         name: "pages",
       },
     },
-    
+
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -28,7 +28,7 @@ module.exports = {
           {
             resolve: "gatsby-remark-relative-images",
             options: {
-              name: "blog",
+              name: "uploads",
             },
           },
           {
