@@ -32,7 +32,7 @@ const Blog = () => {
                     >
                       <div className="article-image">
                         <div className="icon-arrow"></div>
-                        <GatsbyImage image={blog.frontmatter.thumbnail} />
+                        {/* <GatsbyImage image={blog.frontmatter.thumbnail} /> */}
                       </div>
                       <div className="article-text">
                         <h4 className="title">{blog.frontmatter.title}</h4>
