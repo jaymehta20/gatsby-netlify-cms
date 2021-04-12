@@ -4,10 +4,10 @@ title: Save your eyes from eyestrain.
 slug: save-your-eyes-from-eyestrain
 date: 2021-03-05T12:10:47.761Z
 description: Best fonts for your terminal.
-thumbnail: /img/blog-1-cover.jpg
+thumbnail: /img/blog/blog-1-cover.jpg
 ---
 
-![font names ](/img/blog-1.jpg)
+![font names ](/img/blog/blog-1.jpg)
 
 <!--StartFragment-->
 
