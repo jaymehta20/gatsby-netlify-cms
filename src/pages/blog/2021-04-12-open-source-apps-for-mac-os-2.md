@@ -4,7 +4,7 @@ title: Open Source Apps for Mac OS 2
 slug: open-source-apps-for-mac
 date: 2021-04-12T11:36:03.572Z
 description: We use at Codegrain
-thumbnail: /img/blog-4-cover.jpg
+thumbnail: /img/blog/blog-4-cover.jpg
 ---
 
 <!--StartFragment-->
