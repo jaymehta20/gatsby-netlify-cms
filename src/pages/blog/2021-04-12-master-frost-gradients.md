@@ -40,8 +40,8 @@ Share the blog with your loved ones🤞.
 
 Do you like frosted gradients?
 
+![](/img/blog-3-2.jpg)
+
 ![](/img/blog-2-1.jpg)
-
-
 
 <!--EndFragment-->
