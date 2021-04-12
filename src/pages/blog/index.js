@@ -3,11 +3,9 @@ import { Link, graphql, useStaticQuery } from "gatsby";
 import Layout from "../../components/Layout";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const Blog = () => {
-  const data = useStaticQuery(pageQuery);
-  const {
-    allMarkdownRemark: { nodes: blogs },
-  } = data;
+const Blog = ({ data }) => {
+  const blogs = data.allMarkdownRemark.nodes;
+
   return (
     <Layout>
       <div className="spacer">
@@ -59,6 +57,7 @@ export const pageQuery = graphql`
           description
           date(formatString: "DD-MMM-YYYY")
           title
+          thumbnail
           slug
         }
         id

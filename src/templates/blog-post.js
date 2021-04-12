@@ -2,12 +2,13 @@ import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../components/Layout";
 
-const Template = () => {
-  const data = useStaticQuery(postQuery);
-  const {
-    markdownRemark: { frontmatter: blogs },
-  } = data;
+const Template = ({ data }) => {
+  // const data = useStaticQuery(postQuery);
+  // const {
+  //   markdownRemark: { frontmatter: blogs },
+  // } = data;
   const { html } = data.markdownRemark;
+  const { title, description, date } = data.markdownRemark.frontmatter;
   return (
     <div>
       <Layout>
@@ -17,9 +18,9 @@ const Template = () => {
               <div className="row">
                 <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                   <div className="mar-top-lg">
-                    <span className="time">{blogs.date}</span>
-                    <h2 className="article-title">{blogs.title}</h2>
-                    <p>{blogs.description}</p>
+                    <span className="time">{date}</span>
+                    <h2 className="article-title">{title}</h2>
+                    <p>{description}</p>
                   </div>
                   <div
                     className="image-fix"
@@ -54,7 +55,6 @@ export const postQuery = graphql`
         date(formatString: "DD-MMM-YYYY")
         title
       }
-      id
       html
     }
   }

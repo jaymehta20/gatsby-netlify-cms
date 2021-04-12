@@ -19,13 +19,13 @@ Add few circles and a rectangle in an art-board.
 
 ### **Step 2:**
 
-![](/img/blog-2-3.jpg)
+![](/img/blog/blog-2-3.jpg)
 
 Mask out the rectangle to the circles.
 
 ### **Step 3:**
 
-![](/img/blog-2-4.jpg)
+![](/img/blog/blog-2-4.jpg)
 
 Add gaussian blur of 90-100% to circles.
 
