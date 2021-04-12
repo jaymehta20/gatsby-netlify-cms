@@ -52,7 +52,6 @@ export const postQuery = graphql`
       frontmatter {
         description
         date(formatString: "DD-MMM-YYYY")
-        thumbnail
         title
       }
       id
